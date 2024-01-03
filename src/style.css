@@ -1,0 +1,124 @@
+body{
+    background-color: #CAC4CE;
+    margin: 0;
+    padding: 0;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 2.5em;
+    box-sizing: border-box;
+}
+#container{
+    min-height: 85vh;
+    width: 85vw;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+    background-color: #3c5565;
+    border-radius: 40px;
+    padding: 20px;
+    gap: 40px;
+}
+
+.scoreContainer{
+    width: 90%;
+    display: flex;
+    justify-content: space-around;
+}
+.question{
+    display: flex;
+    align-items: center;
+    max-width: 90%;
+    font-size: 0.7em;
+    height:4em ;
+    text-align: center;
+    text-transform: uppercase;
+}
+
+.answer{
+    display: flex;
+    justify-content: center;
+    max-width: 95%;
+    flex-wrap: wrap;
+    gap: 1em;
+}
+.button-container {
+    perspective: 1000px;
+  }
+  
+.answer button{
+    height: 17em;
+    width: 11em;
+    border: none;
+    border-radius: 20px;
+    background-color: #CAC4CE;
+    box-shadow: 10px 10px 10px #1a2d38;
+    transition: transform 0.2s ease;
+}
+
+.answer button:hover{
+    transform: rotateY(-20deg);
+   
+}
+
+
+button.correct{
+    background-color: rgb(134, 154, 113);
+    color: white;
+}
+
+button.wrong{
+    background-color: rgb(151, 89, 89);
+    color: white;
+}
+
+.end{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    height: 100vh;
+    width: 100vw;
+    background-color: #3c5565;
+    text-align: center;
+}
+
+
+.endBtn{
+    height: 70px;
+    width: 200px;
+    border: none;
+    background-color: #1a2d38;
+    color: #CAC4CE;
+    text-align: center;
+    text-transform: uppercase;
+    border-radius: 20px;
+}
+
+@media (max-width: 768px) {
+    body{
+        background-color: #3c5565;
+    }
+    #container{
+        min-width: 340px;
+        height: 100vh;
+        border-radius: 0;
+        padding: 0;
+    }
+    .answer button:hover {
+        transform: none;
+    }
+   
+  }
+  
+  @media (max-width: 500px) {
+    .answer button {
+        height: 10em;
+        width: 8em;
+      }
+  }
+
+  
+ 
